@@ -35,6 +35,9 @@ header {
   background-color: cadetblue;
   color: white;
 }
+.hide {
+  display: none;
+}
 .logo {
   display: inline-flex;
   align-items: center;
@@ -58,7 +61,6 @@ nav p {
   left: 2rem;
   background-color: white;
   margin-top: 10rem;
-
 }
 .motto p {
   margin: 1.5rem 5rem;
@@ -112,4 +114,77 @@ nav p {
 .footer img {
   height: 1.5rem;
   margin: 4rem 1rem 4rem 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  site-container {
+    width: 100%;
+  }
+  header {
+    height: 22rem;
+  }
+  .banner {
+    margin-top: 0;
+  }
+  .motto {
+    margin-top: 5rem;
+    left: -2rem;
+  }
+  .motto p {
+    margin: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .hide {
+    display: block;
+  }
+  .show {
+    display: none;
+  }
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .motto {
+    margin-top: 9rem;
+    width: 100%;
+    left: 0;
+  }
+  .motto p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .icon-section img {
+    margin-bottom: 1rem;
+  }
+  .icon-section {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
+  .text {
+    flex-direction: column;
+  }
+  .text-section {
+    width: 100%;
+    margin-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+  .text-header {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer img {
+    margin: 4rem 0rem;
+  }
 }
